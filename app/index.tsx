@@ -45,7 +45,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    // getData();
+    getData();
   }, []);
 
   return (
