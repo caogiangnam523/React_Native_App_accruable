@@ -9,6 +9,14 @@
     },
     "icon": "./assets/icon.png",
     "name": "tamagui-app",
-    "slug": "tamagui-app"
+    "slug": "tamagui-app",
+    "extra": {
+      "eas": {
+        "projectId": "23b7442a-4330-4500-89b3-6edce0df23a4"
+      }
+    },
+    "android": {
+      "package": "com.guogan.tamaguiapp"
+    }
   }
 }
