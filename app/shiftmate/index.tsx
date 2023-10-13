@@ -12,7 +12,7 @@ export default function ShiftMate() {
   return (
     <View style={{ flex: 1 }}>
       <WebView
-        source={{ uri: 'https://dev.shiftmate.app' }}
+        source={{ uri: 'https://portal.accruabl.com' }}
         startInLoadingState={true}
         renderLoading={() => <DnaLoading />}
       />

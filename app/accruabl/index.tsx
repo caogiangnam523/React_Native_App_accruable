@@ -13,7 +13,7 @@ export default function Accruabl() {
   return (
     <View style={{ flex: 1 }}>
       <WebView
-        source={{ uri: 'https://accruabl.vercel.com' }}
+        source={{ uri: 'https://accruabl.com' }}
         startInLoadingState={true}
         renderLoading={() => <DnaLoading />}
       />

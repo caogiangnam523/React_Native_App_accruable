@@ -58,10 +58,10 @@ export default function Home() {
 
       <YStack space="$4">
         <Button onPress={() => routerPush("/shiftmate")}>
-          ShiftMate
+          Time and Attendance
         </Button>
         <Button onPress={() => routerPush("/accruabl")}>
-          Accruabl
+          Recruitment
         </Button>
       </YStack>
 
