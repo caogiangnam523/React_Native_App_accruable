@@ -13,9 +13,11 @@ export default function Accruabl() {
   return (
     <View style={{ flex: 1 }}>
       <WebView
-        source={{ uri: 'https://accruabl.com' }}
+        source={{ uri: 'https://www.accruabl.com' }}
         startInLoadingState={true}
         renderLoading={() => <DnaLoading />}
+        useWebView2={true}
+        allowUniversalAccessFromFileURLs={true}
       />
       {/* { loading && <ElasticSplash /> }
       <View style={{ height: loading ? 0 : '100%' }}>
