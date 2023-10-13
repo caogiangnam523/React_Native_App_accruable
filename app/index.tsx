@@ -3,7 +3,9 @@ import { Github, Twitter } from "@tamagui/lucide-icons";
 import { Link, useRouter } from "expo-router";
 import {
   Button,
-  H1,
+  H2,
+  H4,
+  Image,
   ListItem,
   Paragraph,
   Separator,
@@ -43,14 +45,18 @@ export default function Home() {
   }
 
   useEffect(() => {
-    getData();
+    // getData();
   }, []);
 
   return (
     <MyStack>
-      <YStack space="$4"></YStack>
+      <YStack space="$1"></YStack>
+      <YStack space="$2" maxWidth={600}>
+        <H2 textAlign="center">Welcome to Accruabl!</H2>
+        <Image source={require('../assets/icon.png')} style={{ alignSelf: "center", width: 80, height: 80 }} />  
+      </YStack>
 
-      <YStack space="$2.5">
+      <YStack space="$4">
         <Button onPress={() => routerPush("/shiftmate")}>
           ShiftMate
         </Button>
@@ -59,7 +65,9 @@ export default function Home() {
         </Button>
       </YStack>
 
-      <YStack space="$5"></YStack>
+      <YStack space="$2">
+        <H4 textAlign="center">Powered by Accruabl</H4>
+      </YStack>
     </MyStack>
   );
 }

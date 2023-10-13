@@ -5,6 +5,7 @@ import { router } from 'expo-router';
 import ElasticBedLoader from '../../components/ElasticBedLoader';
 import { View } from 'react-native';
 import ElasticSplash from '../../components/ElasticSplash';
+import DnaLoading from '../../components/DnaLoading';
 
 
 export default function Accruabl() {
@@ -13,7 +14,8 @@ export default function Accruabl() {
     <View style={{ flex: 1 }}>
       <WebView
         source={{ uri: 'https://accruabl.vercel.com' }}
-        // onLoad={() => setLoading(false)}
+        startInLoadingState={true}
+        renderLoading={() => <DnaLoading />}
       />
       {/* { loading && <ElasticSplash /> }
       <View style={{ height: loading ? 0 : '100%' }}>
